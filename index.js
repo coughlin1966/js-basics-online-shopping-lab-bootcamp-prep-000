@@ -46,11 +46,12 @@ function viewCart() {
 }
 
 function total() {
+getCart();
   var cartTotal = 0;
 
   for (var i = 0; i < cart.length; i++) {
     var cartItem = Object.keys(cart[i])[0];
-    var cartPrice = cart[i][item];
+    var cartPrice = cart[i][cartItem];
     cartTotal += cartPrice;
   }
   return cartTotal;
