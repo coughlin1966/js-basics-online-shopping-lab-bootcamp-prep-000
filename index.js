@@ -71,7 +71,7 @@ for (let i = 0; i < cart.length; i++) {
 function placeOrder(cardNumber) {
 getCart()
 
-  if (cardNumber == 0) {
+  if (!cardNumber) {
     console.log('Sorry, we don\'t have a credit card on file for you.');
   }
 
