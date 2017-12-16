@@ -58,10 +58,15 @@ getCart();
 }
 
 function removeFromCart(item) {
+getCart()
 
-if (var Object.hasOwnProperty(item)) {
-  item.pop}
-else {'That item is not in your cart.'}
+for (let i = 0; i < cart.length; i++) {
+    if (cart[i].hasOwnProperty(item)) {
+      return cart = [...cart.slice(0,i),...cart.slice(i+1)]
+    }
+  }
+  console.log("That item is not in your cart.")
+
 }
 
 function placeOrder(cardNumber) {
