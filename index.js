@@ -58,7 +58,10 @@ getCart();
 }
 
 function removeFromCart(item) {
-  // write your code here
+
+if (var Object.hasOwnProperty(item)) {
+  item.pop}
+else {'That item is not in your cart.'}
 }
 
 function placeOrder(cardNumber) {
